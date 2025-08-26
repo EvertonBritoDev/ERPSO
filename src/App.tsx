@@ -6,7 +6,17 @@ import {
   Outlet,
 } from 'react-router-dom'
 import Cookies from 'js-cookie'
-import { Home, Leads, Login, Profile, Registration } from './pages'
+import {
+  Home,
+  Leads,
+  Login,
+  Profile,
+  Registration,
+  Initial,
+  ServicesPage,
+  Resume,
+  ContactPage,
+} from './pages'
 
 function App() {
   const ProtectedRoute = () => {
@@ -21,8 +31,13 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<Login />} />
+        <Route path="/Login" element={<Login />} />
         <Route path="/cadastro" element={<Registration />} />
+        <Route path="/" element={<Initial />} />
+        <Route path="/ServicesPage" element={<ServicesPage />} />
+        <Route path="/ResumePage" element={<Resume />} />
+        <Route path="/ContactPage" element={<ContactPage />} />
+
         <Route element={<ProtectedRoute />}>
           <Route path="home" element={<Home />} />
           <Route path="/leads" element={<Leads />} />

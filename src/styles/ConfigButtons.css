@@ -1,0 +1,54 @@
+.config-form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.config-text {
+  background-color: white;
+  color: black;
+  border-radius: 4px;
+  border: 1px solid black;
+  box-sizing: border-box;
+  cursor: pointer;
+  height: 32px;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 4px 2px;
+  transition: background-color 0.3s;
+  width: 100%;
+}
+.config-text-mult-line {
+  background-color: white;
+  color: black;
+  border-radius: 4px;
+  border: 1px solid grey;
+  box-sizing: border-box;
+  cursor: pointer;
+  height: 100px;
+  font-size: 16px;
+  font-weight: 100;
+  padding: 4px 2px;
+  transition: background-color 0.3s;
+  width: 100%;
+}
+.config-button {
+  border-radius: 16px;
+  border: none;
+  box-sizing: border-box;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  height: 50px;
+  padding: 0 8px;
+  transition: background-color 0.3s;
+  width: 100%;
+  background-color: blue;
+  color: black;
+  &:hover {
+    background-color: rgb(158, 158, 205);
+  }
+  &:disabled {
+    background-color: rgb(193, 34, 34);
+    cursor: wait;
+  }
+}

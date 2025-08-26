@@ -75,6 +75,13 @@ function Login() {
       password: String(formValues[1]),
     })
   }
+  const createUser = (): void => {
+    navigate('/cadastro')
+  }
+
+  const openInitial = (): void => {
+    navigate('/Initial')
+  }
 
   useEffect(() => {
     if (data?.jwt_token) {
@@ -126,6 +133,18 @@ function Login() {
                     type: 'submit',
                     onClick: handleSubmit,
                     children: loading ? 'Aguarde...' : 'Login',
+                  },
+                  {
+                    className: 'primary',
+                    type: 'submit',
+                    onClick: createUser,
+                    children: loading ? 'Aguarde...' : 'Cadastro',
+                  },
+                  {
+                    className: 'primary',
+                    type: 'submit',
+                    onClick: openInitial,
+                    children: loading ? 'Aguarde...' : 'Inital',
                   },
                 ]}
                 message={handleMessage()}
