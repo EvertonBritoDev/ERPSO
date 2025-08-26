@@ -1,9 +1,5 @@
-//work here 23 06 2025 15:39
-//work here 25 06 2025 11:40
-//work here 07 07 2025 12:22
 import React, { useRef, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
-
 //Styles
 import '@/styles/ConfigButtons.css'
 
