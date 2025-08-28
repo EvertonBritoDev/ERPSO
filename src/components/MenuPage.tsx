@@ -16,7 +16,11 @@ function MenuPage() {
   const openContact = (): void => {
     navigate('/ContactPage')
   }
-
+  /*
+  const openChat = (): void => {
+    navigate('/Chat')
+  }
+  */
   return (
     <div className="container-menu">
       <ImgMenuTechAndOptica
