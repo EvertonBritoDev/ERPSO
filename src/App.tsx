@@ -18,6 +18,8 @@ import {
   ContactPage,
 } from './pages'
 
+import Chat from './pages/Chat'
+
 function App() {
   const ProtectedRoute = () => {
     const checkAuthCookie = Cookies.get('Authorization')
@@ -37,6 +39,7 @@ function App() {
         <Route path="/ServicesPage" element={<ServicesPage />} />
         <Route path="/ResumePage" element={<Resume />} />
         <Route path="/ContactPage" element={<ContactPage />} />
+        <Route path="/Chat" element={<Chat />} />
 
         <Route element={<ProtectedRoute />}>
           <Route path="home" element={<Home />} />
