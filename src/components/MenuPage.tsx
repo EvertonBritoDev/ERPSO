@@ -1,5 +1,6 @@
 import { ImgMenuTechAndOptica } from './ImgMenuTechAndOptica'
 import { useNavigate } from 'react-router-dom'
+
 function MenuPage() {
   const navigate = useNavigate()
   const openServices = (): void => {
@@ -23,6 +24,7 @@ function MenuPage() {
   */
   return (
     <div className="container-menu">
+
       <ImgMenuTechAndOptica
         onClick={openInitial}
         className="img-cursor"
