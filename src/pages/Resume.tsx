@@ -3,8 +3,11 @@ import Grid from '@mui/material/Grid'
 function Resume() {
   return (
     <div>
+      
       <MenuPage />
+      <img src={'/dnc-avatar.jpg'} alt="error" />      
       <div className="fade-in">
+        
         <Grid
           item
           xs={12}
