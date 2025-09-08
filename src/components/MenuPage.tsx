@@ -24,7 +24,6 @@ function MenuPage() {
   */
   return (
     <div className="container-menu">
-
       <ImgMenuTechAndOptica
         onClick={openInitial}
         className="img-cursor"
