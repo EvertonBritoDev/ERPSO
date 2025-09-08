@@ -3,16 +3,14 @@ import Grid from '@mui/material/Grid'
 function Resume() {
   return (
     <div>
-      
-      <MenuPage />
-      <img src={'/dnc-avatar.jpg'} alt="error" />      
+      <MenuPage />      
       <div className="fade-in">
         
         <Grid
           item
           xs={12}
-          sm={6}
-          sx={{ display: 'flex', height: '100vh', padding: '100px' }}
+          sm={4}  
+          sx={{ display: 'grid', height: '100vh', padding: '100px' }}
         >
           <div>
             Atuamos há mais de 15 anos no segmento óptico, acumulando também
@@ -34,6 +32,7 @@ function Resume() {
             regiões Europa (EU), Estados Unidos (EUA) e América Latina e Caribe
             (LAC).
           </div>
+          
         </Grid>
       </div>
     </div>
