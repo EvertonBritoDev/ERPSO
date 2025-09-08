@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const SmartSelling = styled.div`
-  background-image: url(/src/img/SmartSelling.jpg);
+  background-image: url(/SmartSelling.jpg);
   background-size: cover;
   background-position: center;
   height: 800px;
