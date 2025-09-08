@@ -1,15 +1,15 @@
-import { MenuPage } from '@/components'
+import { MenuPage, ResumePage } from '@/components'
 import Grid from '@mui/material/Grid'
 function Resume() {
   return (
     <div>
-      <MenuPage />      
+      <MenuPage />
+      <ResumePage></ResumePage>
       <div className="fade-in">
-        
         <Grid
           item
           xs={12}
-          sm={4}  
+          sm={4}
           sx={{ display: 'grid', height: '100vh', padding: '100px' }}
         >
           <div>
@@ -32,7 +32,6 @@ function Resume() {
             regiões Europa (EU), Estados Unidos (EUA) e América Latina e Caribe
             (LAC).
           </div>
-          
         </Grid>
       </div>
     </div>
