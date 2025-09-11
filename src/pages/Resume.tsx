@@ -6,7 +6,6 @@ function Resume() {
 
       <div className="fade-in">
         <ResumePage></ResumePage>
-        
       </div>
     </div>
   )
